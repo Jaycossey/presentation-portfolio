@@ -53,7 +53,7 @@
 > N/A
 
 ### Usage
-Deployed link: 
+Deployed link: https://jaycossey.github.io/presentation-portfolio/
 ### Installation
 n/a
 
