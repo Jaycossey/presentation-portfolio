@@ -1,7 +1,7 @@
 
 // GLOBALS --------------------------------------------------
 const ROOT_DIV = document.getElementById('root');
-const CONTACT_LINKS = ["github.com/Jaycossey", "linkedin.com/ian-j-scott", "jaycossey:live.com"];
+const CONTACT_LINKS = ["https://github.com/Jaycossey", "https://www.linkedin.com/in/ian-j-scott/", "mailto:jaycossey@live.com"];
 const PROJECT_TITLES = ["Portfolio Generator", "README Generator", "Police Interceptors"];
 const PROJECT_DESCRIPTIONS = ["Node project to handle portfolio generation with npm inquirer prompts.", "Node project to create and automate README.md file generation", "Group project which allows a user to search for crime data within a given area. Using the UK police data API."];
 const PROJECT_LINKS = ["https://github.com/Jaycossey/portfolio-generator", "https://github.com/Jaycossey/readme-generator", "https://github.com/Alan-Chumbley/Police-Interceptors"];
