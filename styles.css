@@ -1,0 +1,161 @@
+
+:root {
+    --bg-color: rgba(144, 16, 174, 0.1);
+    --card-color: rgba(144, 16, 174, 0.6);
+    --border-color: rgba(144, 16, 174, 0.4);
+    --font-color: rgba(144, 16, 174, 1);
+}
+
+body {
+    border-size: border-box;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    padding: 10px;
+    font-family: monospace;
+}
+
+/* PROFILE STYLES --------------------------------- */
+
+.aboutCont {
+    border: 2px outset var(--border-color);
+    border-radius: 10px;
+    height: 200px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutCont > img {
+    content: "A";
+    height: 80px;
+    width: 80px;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-color);
+    border-radius: 50%;
+}
+
+div {
+    border-radius: 10px;
+}
+
+.section {
+    height: 600px;
+    display: grid;
+}
+
+
+/* PORTFOLIO STYLES ------------------------------ */
+
+.portfolio {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        'main main'
+        'second third';
+    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+.portfolio > .card:first-child {
+    grid-area: main;
+    height: 100%;
+}
+
+.portfolio > .card:nth-child(2) {
+    grid-area: second;
+}
+
+.portfolio > .card:nth-child(3) {
+    grid-area: third;
+}
+
+.card {
+    height: 200px;
+    padding: 5px;
+}
+
+.title {
+    height: 40px;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    
+}
+
+.image {
+    border: 2px solid var(--border-color);
+    height: 50%;
+    margin: 5px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+#presentation0 > .image {
+    background-image: url('./images/project1.png');
+}
+
+#presentation1 > .image {
+    background-image: url('./images/project2.png');
+}
+
+#presentation2 > .image {
+    background-image: url('./images/project3.png');
+}
+
+.text {
+    padding: 2px;
+    font-size: 1rem;
+}
+
+.url {
+    padding: 2px;
+}
+
+a:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    transition-duration: 0.5s;
+}
+
+a:active {
+    transform: scale(95%);
+}
+
+a:visited {
+    color: blue;
+} 
+
+
+/* FOOTER STYLES ----------------------------------- */
+.footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconAnchor {
+    margin: 50px;
+}
+
+.iconAnchor > i {
+    font-size: 3rem;
+}
+
+/* MEDIA QUERIES ----------------------------------- */
+@media (width > 320px) and (width < 1000px) {
+    .portfolio {
+        grid-template-areas: 
+            'main'
+            'second'
+            'third';
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+    }
+} 
+    
