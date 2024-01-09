@@ -20,7 +20,7 @@ body {
 .aboutCont {
     border: 2px outset var(--border-color);
     border-radius: 10px;
-    height: 200px;
+    height: auto;
     padding: 2px;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,6 @@ div {
 }
 
 .section {
-    height: 600px;
     display: grid;
 }
 
@@ -58,15 +57,16 @@ div {
     grid-template-rows: 3fr 2fr;
     grid-template-columns: 1fr 1fr;
     margin: 10px;
+    margin-bottom: 120px;
 }
 
 .portfolio > .card:first-child {
     grid-area: main;
-    height: 100%;
 }
 
 .portfolio > .card:nth-child(2) {
     grid-area: second;
+    margin-bottom: 100px;
 }
 
 .portfolio > .card:nth-child(3) {
@@ -74,7 +74,7 @@ div {
 }
 
 .card {
-    height: 200px;
+    height: 100%;
     padding: 5px;
 }
 
@@ -83,7 +83,6 @@ div {
     border-radius: 10px;
     padding-top: 10px;
     font-size: 1.2rem;
-    
 }
 
 .image {
